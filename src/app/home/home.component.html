@@ -2,21 +2,21 @@
     <mat-card class="example-card">
         <mat-card-title class="mat-card-title ">Search Flight Here</mat-card-title>
         <mat-card-content class="content">
-            <mat-form-field class="mat-form-field">
+            <mat-form-field  appearance="outline" class="mat-form-field">
                 <mat-label class="selective" style="width: 80px;">Select from city</mat-label>
                 <mat-select>
                     <mat-option>None</mat-option>
                     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="mat-form-field">
+            <mat-form-field appearance="outline" class="mat-form-field">
                 <mat-label>Select To city</mat-label>
                 <mat-select>
                     <mat-option>None</mat-option>
                     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="mat-form-field">
+            <mat-form-field  appearance="outline" class="mat-form-field">
                 <mat-label>Choose a date</mat-label>
                 <input matInput [matDatepicker]="picker">
                 <mat-hint>MM/DD/YYYY</mat-hint>

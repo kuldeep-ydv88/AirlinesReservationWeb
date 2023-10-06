@@ -10,20 +10,37 @@
     font-weight: bold;
     
 }
-.menu{
+.mat-card{
     width: 80%;
+    top: 20px;
+    height: 20%;
+    left: 12%;
+    border-radius: 15px;
+    
+   
+}
+.radio-btn{
     margin-left: 12%;
-    margin-top: 15px;
+   
+}
+.input-f{
+    position: relative;
+    width: 18%;
+    margin-top: 30px;
     
 }
-.inptutoolbar{
-    background-color: rgb(81, 78, 119);
-    color: white;
-    border-radius: 8px;
+.item-card{
+    display: flex;
+    gap: 10px;
+    margin-left: 25px;
 }
-.label{
-    position: relative;
-    top:11px;
-    left: 10px;
-    margin-right: 16px;
+.Search{
+    margin-top: 46px;
+    width: 10%;
 }
+.main{
+    margin-top: 2%;
+}
+
+
+

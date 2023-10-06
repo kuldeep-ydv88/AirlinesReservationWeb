@@ -1,44 +1,50 @@
 <mat-toolbar class="toolbar">
-  <p class="para">Search Your Flight</p>
+    <p class="para">Search Your Flight</p>
 </mat-toolbar>
-<div class="search-flight">
-  Search Your Flight
-</div>
-<div class="menu">
-  <mat-toolbar class="inptutoolbar">
-    <mat-label>Search Flight:</mat-label>
-    <mat-label class="label">
-      <mat-form-field>
+<div class="main">
+  <mat-radio-group aria-label="Select an option" class="radio-btn">
+    <mat-radio-button value="1">One way</mat-radio-button>
+    <mat-radio-button value="2">Round Trip</mat-radio-button>
+  </mat-radio-group>
+  <!-- <div class="search-flight">
+    Search Your Flight
+  </div> -->
+  <mat-card class="mat-card">
+    <div class="item-card">
+      <mat-form-field appearance="outline" class="input-f">
         <mat-label>Select from city</mat-label>
-        <mat-select [(value)]="selected">
-          <mat-option>None</mat-option>
-          <mat-option value="option1">Option 1</mat-option>
-          <mat-option value="option2">Option 2</mat-option>
-          <mat-option value="option3">Option 3</mat-option>
+        <mat-select disableRipple>
+          <mat-option value="1">Option 1</mat-option>
+          <mat-option value="2">Option 2</mat-option>
+          <mat-option value="3">Option 3</mat-option>
         </mat-select>
       </mat-form-field>
-    </mat-label>
-    <mat-label class="label">
-      <mat-form-field>
+      <mat-form-field appearance="outline" class="input-f">
         <mat-label>Select to city</mat-label>
-        <mat-select [(value)]="selected">
-          <mat-option>None</mat-option>
-          <mat-option value="option1">Option 1</mat-option>
-          <mat-option value="option2">Option 2</mat-option>
-          <mat-option value="option3">Option 3</mat-option>
+        <mat-select disableRipple>
+          <mat-option value="1">Option 1</mat-option>
+          <mat-option value="2">Option 2</mat-option>
+          <mat-option value="3">Option 3</mat-option>
         </mat-select>
       </mat-form-field>
-    </mat-label>
-    <mat-label class="label">
-      <mat-form-field>
-        <mat-label>Total no of passengers</mat-label>
-        <mat-select [(value)]="passengers">
-          <mat-option value="option1">1</mat-option>
-          <mat-option value="option2"> 2</mat-option>
-          <mat-option value="option3"> 3</mat-option>
-          <mat-option value="option3"> 4</mat-option>
+      <mat-form-field appearance="outline" class="input-f">
+        <mat-label>No of person</mat-label>
+        <mat-select disableRipple>
+          <mat-option value="1">1</mat-option>
+          <mat-option value="2">2</mat-option>
+          <mat-option value="3"> 3</mat-option>
+          <mat-option value="3"> 4</mat-option>
         </mat-select>
       </mat-form-field>
-    </mat-label>
-  </mat-toolbar>
+      <mat-form-field appearance="outline" class="input-f">
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepickerFilter]="myFilter" [matDatepicker]="picker">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <button mat-raised-button class="Search" color="primary">Search</button>
+      <button mat-raised-button class="Search" color="warn">Cancel</button>
+    </div>
+</mat-card>
 </div>
