@@ -1,2 +1,66 @@
-<p>contact us working</p>
-<P>hiiiiiiiiiiiiiiiiiii</P>
+<div class="contact-us">
+    <h1 class="h1">Contact us</h1>
+    <div class="information">
+        <!-- <div class="address">
+            <h1>Address</h1>
+        </div>
+        <div class="Phone">
+            <h1>Phone number</h1>
+        </div>
+        <div class="email">
+            <h1>Email</h1>
+        </div> -->
+        <!-- <div class="row">
+            <mat-icon class="col">location</mat-icon>
+            <h1 class="col"> Address </h1>
+          </div>
+          <div class="row">
+            <mat-icon class="col">phone</mat-icon>
+            <h1 class="col">Phone number</h1>
+          </div>
+          <div class="row">
+            <mat-icon class="col">email</mat-icon>
+            <h1 class="col">>Email</h1>
+          </div> -->
+    </div>
+  <mat-card class="example-card">
+    <mat-card-header class="header">
+      <mat-card-title style="font-size: larger; font-weight: 500"
+        >Send Message</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form>
+        <div class="input-field">
+          <mat-form-field class="example-full-width">
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder="Full Name" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Message</mat-label>
+            <input
+              matInput
+              #message
+              maxlength="256"
+              placeholder="Type of your Message"
+              style="height: 60px"
+            />
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button
+        mat-flat-button
+        color="primary"
+        class="Submit"
+        style="position: relative; margin-left: 10px">
+        Send
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

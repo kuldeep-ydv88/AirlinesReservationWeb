@@ -21,6 +21,10 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+
+
 
 
 @NgModule({
@@ -48,7 +52,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDividerModule
+    MatDividerModule,
+    MatRadioModule,
+    MatAutocompleteModule,
+    
+    
   
   ],
   providers: [],
