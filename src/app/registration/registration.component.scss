@@ -1,7 +1,10 @@
 .registration-container {
     max-width: 50%;
     margin: auto;
-    margin-top: 50px;
+    position: relative;
+    top: 50px;
+    background-color: white;
+   
 }
 .row-1-e {
     width: 49.5%;
@@ -22,4 +25,9 @@
     position: relative;
     left: 20px;
     bottom: 45px;
+}
+
+.registrationPage{
+    background-color:  rgba(232, 219, 209, 0.673);
+    height: 91%;
 }

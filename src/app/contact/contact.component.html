@@ -1,1 +1,33 @@
-<p>contact us working</p>
+<div class="contact-us">
+    <h1 class="h1">Contact us</h1>
+    <div class="information">
+    </div>
+  <mat-card class="example-card">
+    <mat-card-header class="header">
+      <mat-card-title style="font-size: larger; font-weight: 500">Send Message</mat-card-title>
+    </mat-card-header>
+    <mat-divider ></mat-divider>
+    <mat-card-content>
+      <form>
+        <div class="input-field">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder="Full Name" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" />
+          </mat-form-field>
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Message</mat-label>
+            <input matInput #message maxlength="256" placeholder="Type of your Message" style="height: 60px"/>
+          </mat-form-field>
+        </div>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="primary" class="Submit" style="position: relative; margin-left: 10px;"> Send </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

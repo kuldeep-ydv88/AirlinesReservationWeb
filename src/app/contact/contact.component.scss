@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.h1{
+    
+    position: relative;
+    justify-content: center;
+    display: flex;
+    top:50px;
+    color: rgb(254, 254, 254);
+    font-weight: 500;
+    font-size: 50px;
+    font-style: oblique;
+
+
+}
+.example-card {
+    max-width:626px;
+    position: relative;
+    margin-top: 175px;
+    left: 55%;
+    border-radius: 12px;
+  }
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  .input-field{
+    top: 24px;
+    position: relative;
+  }
+  .header{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-us{
+    width: 100%;
+    position: relative;
+    height:91.2%;
+    background-image: url("../../assets/nicole-geri-gMJ3tFOLvnA-unsplash.jpg"); 
+    background-size:cover;
+
+  }
+  // .information{
+  //   position: relative;
+  //   display: flow-root;
+  //   top:18%;
+  //   margin-left: 88px;
+  // }
+  
+ 
+  
+ 
+  

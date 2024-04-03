@@ -1,19 +1,20 @@
+<div class="login-main">
 <mat-card class="mat-card">
     <h1 style="margin-top: 10px;">Login to your Account</h1>
-    <mat-divider></mat-divider>
+    <mat-divider ></mat-divider>
     <mat-form-field appearance="outline" class="input">
-        <mat-label>enter your username</mat-label>
+        <mat-label>Enter your Email</mat-label>
         <input matInput placeholder="username">
         <mat-icon matSuffix>person</mat-icon>
     </mat-form-field>
     <mat-form-field appearance="outline" class="input">
-        <mat-label>Entet the Password</mat-label>
+        <mat-label>Enter your Password</mat-label>
         <input matInput placeholder="Password">
         <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </mat-form-field>
     <div class="button">
-        <button mat-flat-button color="" class="Submit">Cancel</button>
-        <button mat-flat-button class="login" style="margin-left: 45px;" color="primary">Login</button>
+        <button mat-flat-button color="" class="Cancel">Cancel</button>
+        <button mat-flat-button class="login" style="margin-left: 15%;" color="primary">Login</button>
     </div>
 </mat-card>
- 
+</div>

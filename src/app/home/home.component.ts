@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable, map, startWith } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  
+
   states: string[] = [
     'Delhi',
     'Mumbai',
@@ -25,5 +29,6 @@ export class HomeComponent {
     
   ];
   passengers:any[]=[2,3,4,5]
+myControl: any;
 
 }

@@ -24,9 +24,11 @@
 }
 
 .main{
- background-image: url("../../assets/home-page2.jpg");
- background-size: cover;
- height:400px;
+ background-image: url("../../assets/polynesia-3021072_1920.jpg");
+ height: 60%;
+ width: 100%;
+ background-position:0%;
+ 
 }
 
 .h3{
@@ -62,7 +64,6 @@
 .search{
   position: relative;
   left:25px;
-  
   top: 20px;
 }
 .content{
@@ -74,7 +75,26 @@
   
 }
 .about{
-  height: 200px;
+  // height: 200px;
   margin-top: 50px;
   margin-left: 50px;
+  
 }
+
+.search-flight{
+  width: 81%;
+  height: 40%;
+  left: 150px;
+  top: 150px;
+}
+
+.dropdown-search{
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.home{
+ 
+  height: 100%;
+}
+
