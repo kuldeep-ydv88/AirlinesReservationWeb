@@ -1,22 +1,30 @@
 .mat-card{
-    width: 45.5%;
-    height: 300px;
-    margin-top: 8%;
+    width: 42.5%;
+    height: 320px;
+    position: relative;
+    top: 135px;
     text-align: center;
     left: 50%;
+    border-radius: 10px;
     transform: translateX(-50%);
+   
 
 }
 .input{
-    width: 50%;
+    width: 60%;
     margin-left: 23%;
     margin-top: 20px;
     
 }
-.Submit{
+.Cancel{
     position: relative;
     left: -140px;
 }
 .login{
     position: fixed
 }
+.login-main{
+    height: 91%;
+    background-color: rgba(232, 219, 209, 0.673);
+}
+

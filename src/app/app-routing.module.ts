@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'cutomer-login',component:CustomerLoginComponent},
   {path:'feedback',component:FeedbackComponent},
-  {path:'dashboard',component:DashboardComponent}
+  {path:'dashboard',component:DashboardComponent},
+  {path:'detailsAboutMe',component:ContactUsPageComponent}
 ];
 
 @NgModule({

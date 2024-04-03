@@ -3,6 +3,7 @@
     height: 60%;
     background-image: url("../../assets/about-img.jpg");
     background-size: cover;
+   
 }
 .heading{
     position: relative;
@@ -21,9 +22,11 @@
 }
 
 .para{
-    font-size: 13x;
+    font-size: 16x;
     display: inline-block;
     text-align: justify;
+    line-height: 23px;
+   
 }
 .heading {
     opacity: 0;
@@ -37,4 +40,9 @@
     to {
       opacity: 1;
     }
+  }
+
+  .about{
+    height: 100%;
+    background-color:  rgba(232, 219, 209, 0.673);;
   }

@@ -23,6 +23,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 
 
 
@@ -38,7 +39,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     ContactComponent,
     FeedbackComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    ContactUsPageComponent
   ],
   imports: [
     BrowserModule,
