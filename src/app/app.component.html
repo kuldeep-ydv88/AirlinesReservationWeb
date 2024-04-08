@@ -1,3 +1,5 @@
-<!-- <app-navbar  *ngIf="showNavbar && router.url !== '/dashboard'"></app-navbar> -->
-<app-navbar></app-navbar>
+<app-navbar *ngIf="showNavbar && router.url !== '/dashboard' && router.url !== '/admin-dashboard' && router.url !=='/change/password' && router.url!== '/user/profile'"></app-navbar>
+<app-toolbar *ngIf="showToolbar && (router.url == '/admin-dashboard' || router.url == '/change/password' || router.url== '/user/profile')"></app-toolbar>
+
+<!-- <app-navbar ></app-navbar> -->
 <router-outlet></router-outlet>

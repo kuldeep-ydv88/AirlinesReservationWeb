@@ -25,7 +25,7 @@ export class ContactUsPageComponent {
   onSubmit() {
     if (this.contactForm?.valid) { 
       console.log('Form Submitted!', this.contactForm.value);
-      // Here you would typically send the form data to a server
+      
     }
   }
 

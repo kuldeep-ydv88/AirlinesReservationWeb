@@ -9,6 +9,9 @@ import { CustomerLoginComponent } from './customer-login/customer-login.componen
 import { FeedbackComponent } from './feedback/feedback.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -19,7 +22,10 @@ const routes: Routes = [
   {path:'cutomer-login',component:CustomerLoginComponent},
   {path:'feedback',component:FeedbackComponent},
   {path:'dashboard',component:DashboardComponent},
-  {path:'detailsAboutMe',component:ContactUsPageComponent}
+  {path:'contact-us',component:ContactUsPageComponent},
+  {path:'admin-dashboard',component:AdminDashboardComponent},
+  {path:'change/password',component:ChangePasswordComponent},
+  {path:'user/profile',component:ProfileComponent}
 ];
 
 @NgModule({

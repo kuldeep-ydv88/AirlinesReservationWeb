@@ -5,6 +5,7 @@
     background-size: cover;
    
 }
+
 .heading{
     position: relative;
     top: 35%;
@@ -19,6 +20,7 @@
     left: 20px;
     color: rgb(16, 16, 80);
     font-size: xxx-large;
+    font-weight: 300;
 }
 
 .para{
@@ -28,6 +30,7 @@
     line-height: 23px;
    
 }
+
 .heading {
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -42,7 +45,7 @@
     }
   }
 
-  .about{
+.about{
     height: 100%;
     background-color:  rgba(232, 219, 209, 0.673);;
-  }
+}

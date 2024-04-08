@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'AirlinesReservation';
-  constructor(private router:Router){}
+  showNavbar = true;
+  showToolbar = true;
+  constructor(public router:Router){}
 
-showNavbar:boolean = false
 }

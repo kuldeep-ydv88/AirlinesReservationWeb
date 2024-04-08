@@ -24,7 +24,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import { ProfileComponent } from './profile/profile.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -40,7 +47,13 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
     FeedbackComponent,
     NavbarComponent,
     DashboardComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    AdminDashboardComponent,
+    ProfileComponent,
+    ChangePasswordComponent,
+    ToolbarComponent
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -57,6 +70,11 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
     MatDividerModule,
     MatRadioModule,
     MatAutocompleteModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule
     
     
   

@@ -3,12 +3,12 @@
   <h1 class="registration-card">Customer Registration Here</h1>
   <mat-card >
     <mat-card-content>
-      <form>
+      <form [formGroup]="registerForm">
         <div>
           <mat-form-field appearance="outline" class="row-1-e">
             <mat-label>Username</mat-label>
             <input matInput placeholder="Username" formControlName="username" required maxlength="20"
-              matTooltip="Minimum 6 characters">
+              matTooltip="Minimum 4 characters">
             <mat-icon matSuffix>person</mat-icon>
           </mat-form-field>
           <mat-form-field appearance="outline" class="row-2-e">
@@ -25,9 +25,9 @@
           </mat-form-field>
           <mat-form-field appearance="outline" class="row-2-e">
             <mat-label>Date of birth</mat-label>
-            <input matInput [matDatepicker]="picker">
-            <mat-hint>MM/DD/YYYY</mat-hint>
-            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <input matInput [matDatepicker]="picker" formControlName="dob">
+            <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+            <mat-datepicker-toggle matIconSuffix [for]="picker" ></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
           <mat-form-field appearance="outline" class="row-1-e">
@@ -55,7 +55,7 @@
           </mat-form-field>
           <mat-form-field appearance="outline" class="row-1-e">
             <mat-label>Nationality</mat-label>
-            <mat-select>
+            <mat-select formControlName="CountryCode">
               <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
             </mat-select>
           </mat-form-field>
@@ -69,9 +69,9 @@
       </form>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-flat-button color="primary" class="register-btn"> <mat-icon>thumb_up</mat-icon>Register</button>
+      <button mat-flat-button color="primary" class="register-btn" (click)="onformSubmit()"> <mat-icon>thumb_up</mat-icon>Register</button>
     </mat-card-actions>
-    <p class="alreadyregister"><button mat-button routerLink="/cutomer-login">click here if you have already register</button></p>
+    <p class="alreadyregister"><button mat-button routerLink="/cutomer-login"><mat-icon>exit_to_app</mat-icon>click here if you have already register</button></p>
   </mat-card>
 </div>
 </div>

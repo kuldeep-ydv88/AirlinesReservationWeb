@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <button mat-button [matMenuTriggerFor]="menu"><mat-icon >person</mat-icon></button>
+        <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/user/profile"><mat-icon>face</mat-icon>My Profile</button>
+    <button mat-menu-item routerLink="/change/password"><mat-icon>key</mat-icon>Change Password</button>
+    <button mat-menu-item (click)="logOut()"><mat-icon>exit_to_app</mat-icon>Logout</button>
+   </mat-menu>
+</mat-toolbar>
+

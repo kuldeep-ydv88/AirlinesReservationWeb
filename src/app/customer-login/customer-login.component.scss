@@ -1,5 +1,5 @@
 .mat-card{
-    width: 42.5%;
+    width: 40%;
     height: 320px;
     position: relative;
     top: 135px;
@@ -12,13 +12,13 @@
 }
 .input{
     width: 60%;
-    margin-left: 23%;
+    justify-content:center;
     margin-top: 20px;
     
 }
 .Cancel{
     position: relative;
-    left: -140px;
+   right: 23%;
 }
 .login{
     position: fixed
