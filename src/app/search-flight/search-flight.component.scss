@@ -1,7 +1,12 @@
-.para{
-    margin-left:45%;
-    top: 20px;
-    color: rgb(10, 24, 92);
+.toolbar{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   font-family: sans-serif;
+   font-weight: bolder;
+   position: relative;
+   color: rgb(10, 24, 92);
+    
 }
 .search-flight{
     font-size: xx-large;

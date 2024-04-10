@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup,ReactiveFormsModule, Validators } from '@angular
 export class CustomerLoginComponent implements OnInit{
   hide=true;
   loginForm!:FormGroup;
+  inputText: string | undefined;
 
   constructor(
     private formBuilder:FormBuilder
@@ -23,6 +24,10 @@ export class CustomerLoginComponent implements OnInit{
 
   onLogin(){
       
+  }
+
+  clearInput(){
+    this.loginForm.reset();
   }
 
 }

@@ -20,18 +20,18 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatDividerModule} from '@angular/material/divider';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { ProfileComponent } from './profile/profile.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyBookingComponent } from './my-booking/my-booking.component';
+import { DashboardMainComponent } from './dashboard/dashboard-main/dashboard-main.component';
 
 
 
@@ -46,12 +46,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ContactComponent,
     FeedbackComponent,
     NavbarComponent,
-    DashboardComponent,
     ContactUsPageComponent,
     AdminDashboardComponent,
     ProfileComponent,
-    ChangePasswordComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    MyBookingComponent,
+    DashboardMainComponent,
     
     
   ],

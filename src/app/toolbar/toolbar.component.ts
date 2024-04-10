@@ -4,22 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.scss']
+  styleUrls: ['./toolbar.component.scss'],
 })
-export class ToolbarComponent implements OnInit{
+export class ToolbarComponent implements OnInit {
+  opened = false;
 
-  constructor(
-    private router: Router
-  ){
+  constructor(private router: Router) {}
 
-  }
+  ngOnInit() {}
 
-  ngOnInit() {
-    
-  }
-
-  logOut(){
+  logOut() {
     this.router.navigate(['']);
-}
-
+  }
 }
