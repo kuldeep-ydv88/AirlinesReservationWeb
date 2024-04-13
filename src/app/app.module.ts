@@ -11,7 +11,6 @@ import { AboutComponent } from './about/about.component';
 import { SearchFlightComponent } from './search-flight/search-flight.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
@@ -43,7 +42,6 @@ import { DashboardMainComponent } from './dashboard/dashboard-main/dashboard-mai
     SearchFlightComponent,
     CustomerLoginComponent,
     RegistrationComponent,
-    ContactComponent,
     FeedbackComponent,
     NavbarComponent,
     ContactUsPageComponent,
