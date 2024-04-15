@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-flight.component.scss']
 })
 export class SearchFlightComponent implements OnInit{  
+  minDate = new Date();
   selected = 'option1';
-  passengers='option1';
+
+  
 
   constructor(){
 

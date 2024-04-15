@@ -13,5 +13,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class DashbordHomeRoutingModule { }
-export { ChangePasswordComponent };
+
 

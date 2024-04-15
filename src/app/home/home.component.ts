@@ -7,7 +7,21 @@ import { Observable, map, startWith } from 'rxjs';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent  implements OnInit{
+  minDate = new Date();
+  passengers:any[]=[2,3,4,5]
+  myControl: any;
+  selected='';
+
+  
+  constructor(){
+
+  }
+
+  ngOnInit(){
+    
+  }
+  
   
 
   states: string[] = [
@@ -28,8 +42,7 @@ export class HomeComponent {
    
     
   ];
-  passengers:any[]=[2,3,4,5]
-myControl: any;
+
 
 
 }

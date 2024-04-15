@@ -1,34 +1,33 @@
-.toolbar{
-   align-items: center;
-   justify-content: center;
-   display: flex;
-   font-family: sans-serif;
-   font-weight: bolder;
-   position: relative;
-   color: rgb(10, 24, 92);
-    
-}
-.search-flight{
-    font-size: xx-large;
-    margin-top: 8%;
-    margin-left:12%;
-    font-weight: bold;
-    
-}
-.menu{
-    width: 80%;
-    margin-left: 12%;
-    margin-top: 15px;
-    
-}
-.inptutoolbar{
-    background-color: rgb(81, 78, 119);
-    color: white;
-    border-radius: 8px;
-}
-.label{
+
+.Search-card{
     position: relative;
-    top:11px;
-    left: 10px;
-    margin-right: 16px;
+    left: 82px;
+    width: 90%;
+    top: 100px;
+
 }
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }
+
+  .search-box{
+    display: flex;
+    gap: 10px;
+    margin-top:10px;
+    left: 10px;
+    
+
+  }
+  .main{
+    position: relative;
+    margin-left: 32px;
+    margin-top: 19px;
+   
+  }
+
+  .search-flight{
+   background-image: url('../../assets/father-656734_1920.jpg');
+    height: 91%;
+    background-size: cover;
+  }

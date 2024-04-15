@@ -1,48 +1,39 @@
 <div class="home">
 
 <div class="main">
-    <mat-card class="search-flight">
-        <mat-card-content>
-            <mat-radio-group aria-label="Select an option">
-                <mat-radio-button value="1">One Way</mat-radio-button>
-                <mat-radio-button value="2">Round Trip</mat-radio-button>
-            </mat-radio-group>
-        </mat-card-content>
-        <mat-card-content>
-            
-          
-        </mat-card-content>
-    </mat-card>
-    <!-- <mat-card class="example-card">
-        <mat-card-title class="mat-card-title ">Search Flight Here</mat-card-title>
+   
+    <mat-card class="example-card">
+        <mat-card-title class="mat-card-title " style="font-family: sans-serif;font-size: 26px;">Search Flight Here</mat-card-title>
         <mat-card-content class="content">
-            <mat-form-field class="mat-form-field">
+            <mat-form-field class="mat-form-field" appearance="outline">
                 <mat-label class="selective" style="width: 80px;">Select from city</mat-label>
                 <mat-select>
                     <mat-option>None</mat-option>
                     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="mat-form-field">
+            <mat-form-field class="mat-form-field" appearance="outline">
                 <mat-label>Select To city</mat-label>
                 <mat-select>
                     <mat-option>None</mat-option>
                     <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
                 </mat-select>
             </mat-form-field>
-            <mat-form-field class="mat-form-field">
+            <mat-form-field class="mat-form-field" appearance="outline">
                 <mat-label>Choose a date</mat-label>
-                <input matInput [matDatepicker]="picker">
-                <mat-hint>MM/DD/YYYY</mat-hint>
+                <input matInput [matDatepicker]="picker" [min]="minDate">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
         </mat-card-content>
         <mat-card-actions>
             <button mat-flat-button class="search" color="warn">reset</button>
-            <button mat-flat-button class="Research" color="primary">Search</button>
+            <button mat-flat-button class="Research" color="primary">Search<mat-icon matSuffix> flight</mat-icon></button>
         </mat-card-actions>
-    </mat-card> -->
+    </mat-card>
+    <div class="qoutes">
+        <h1 style="font-size: 60px;font-weight: bold;color: white;">Fly anywhere, Fly everywhere</h1>
+    </div>
 
 </div>
 <div class="Top-route-Destination">
@@ -62,13 +53,13 @@
         <mat-card-title>Quatar Airways</mat-card-title>
     </mat-card>
     <mat-card class="example-card-2">
-        <img src="../../assets/sebastian-grochowicz-flvyiQkkYYM-unsplash.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
+        <img src="../../assets/Carousel-1.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
-        <mat-card-title>Oman Airs</mat-card-title>
+        <mat-card-title>Oman Air</mat-card-title>
     </mat-card>
     <mat-card class="example-card-2">
-        <img src="../../assets/nicole-geri-gMJ3tFOLvnA-unsplash.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
+        <img src="../../assets/airport-2373727_1280.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
         <mat-card-title>France</mat-card-title>

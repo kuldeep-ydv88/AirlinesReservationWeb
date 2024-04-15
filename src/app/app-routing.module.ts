@@ -24,8 +24,8 @@ const routes: Routes = [
   {path:'my-booking',component:MyBookingComponent},
   {
     path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashbord-home/dashbord-home.module')
-      .then(m => m.DashbordHomeModule)
+    loadChildren: () => import('./dashboard/dashboard-main/dashboard-main.component')
+      .then(m => m.DashboardMainComponent)
   }
 
 
