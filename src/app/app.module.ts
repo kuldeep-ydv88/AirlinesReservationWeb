@@ -11,7 +11,6 @@ import { AboutComponent } from './about/about.component';
 import { SearchFlightComponent } from './search-flight/search-flight.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { ContactComponent } from './contact/contact.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatSelectModule} from '@angular/material/select';
@@ -20,11 +19,18 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatDividerModule} from '@angular/material/divider';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-
+import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import { ProfileComponent } from './profile/profile.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyBookingComponent } from './my-booking/my-booking.component';
+import { DashboardMainComponent } from './dashboard/dashboard-main/dashboard-main.component';
 
 
 
@@ -36,11 +42,16 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
     SearchFlightComponent,
     CustomerLoginComponent,
     RegistrationComponent,
-    ContactComponent,
     FeedbackComponent,
     NavbarComponent,
-    DashboardComponent,
-    ContactUsPageComponent
+    ContactUsPageComponent,
+    AdminDashboardComponent,
+    ProfileComponent,
+    ToolbarComponent,
+    MyBookingComponent,
+    DashboardMainComponent,
+    
+    
   ],
   imports: [
     BrowserModule,
@@ -57,6 +68,11 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
     MatDividerModule,
     MatRadioModule,
     MatAutocompleteModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule,
+    FormsModule,
+    ReactiveFormsModule
     
     
   

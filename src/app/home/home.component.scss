@@ -1,33 +1,19 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
 .toolbar{
     color: rgb(244, 248, 248);
     background-color: rgb(14, 72, 110);
     gap: 30px;
     
 }  
-.example-card {
-  max-width: 400px;
-  text-align: center;
-  color: rgb(16, 16, 16);
-}
-
-.example-card{
-  width: 350px;
-  height: 350px;
-  position: relative;
-  left: 50px;
-  top: 27px;
-  border-radius: 12px;
-
-}
 
 .main{
- background-image: url("../../assets/polynesia-3021072_1920.jpg");
+ background-image: url("../../assets/panorama-2117310_1280.jpg");
  height: 60%;
  width: 100%;
- background-position:0%;
+ background-size: cover;
  
 }
 
@@ -41,60 +27,81 @@
 }
 
 .example-card-2{
-  width: 300px;
+  width: 321px;
   height: 250px;
+  border-radius: 10px;
 
 }
 
 .mat-card{
   display: flex;
-  gap: 20px;
-  margin-left:120px;
+  gap: 50px;
+  margin-left:49px;
   position: relative;
-  top:20px;
+  top:22px;
   text-align: center;
+  
  
 }
 
-.Research{
-  position: relative;
-  left: 150px;
-  top: 20px;
-}
-.search{
-  position: relative;
-  left:25px;
-  top: 20px;
-}
-.content{
-  position: relative;
-  top: 20px;
-}
-.mat-form-field {
-  width: 90%;
-  
-}
+
+
 .about{
-  // height: 200px;
   margin-top: 50px;
   margin-left: 50px;
   
 }
 
-.search-flight{
-  width: 81%;
-  height: 40%;
-  left: 150px;
-  top: 150px;
-}
-
-.dropdown-search{
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
 .home{
  
   height: 100%;
 }
 
+
+// This is search card CSS 
+
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
+}
+
+.search-card{
+  position: relative;
+  left: 82px;
+  width: 90%;
+  top: 213px;
+  
+}
+
+.search-box{
+   display: flex;
+    gap: 10px;
+    position: relative;
+    left: 31px;
+    top: 7px;
+}
+
+.radio-button{
+  position: relative;
+  left: 24px;
+}
+
+.slogan{
+
+  h1{
+    opacity: 5;
+    animation: fadeIn 2s ease-in-out forwards;
+  
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  
+  }
+
+}

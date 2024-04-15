@@ -5,6 +5,7 @@
     top: 50px;
     background-color: white;
    
+   
 }
 .row-1-e {
     width: 49.5%;
@@ -14,13 +15,26 @@
     margin-left: 1%;
 }
 .registration-card{
-    text-align: center;
     position: relative;
-    top: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+
 }
 .register-btn{
     margin-left: 82.70%;
+    background: linear-gradient(to right, red, blue);
+    cursor:pointer;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
+.register-btn:hover {
+   
+    opacity: 1; 
+  }
 .alreadyregister{
     position: relative;
     left: 20px;
@@ -30,4 +44,6 @@
 .registrationPage{
     background-color:  rgba(232, 219, 209, 0.673);
     height: 91%;
+    background-image: url('../../assets/adventure-1850912_1280.jpg');
+    background-size:cover;
 }
