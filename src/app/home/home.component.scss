@@ -1,27 +1,13 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
 .toolbar{
     color: rgb(244, 248, 248);
     background-color: rgb(14, 72, 110);
     gap: 30px;
     
 }  
-.example-card {
-  max-width: 400px;
-  text-align: center;
-  color: rgb(16, 16, 16);
-}
-
-.example-card{
-  width: 360px;
-  height: 350px;
-  position: relative;
-  left: 50px;
-  top: 27px;
-
-
-}
 
 .main{
  background-image: url("../../assets/panorama-2117310_1280.jpg");
@@ -58,115 +44,49 @@
  
 }
 
-.Research{
-  position: relative;
-  left: 90px;
-  top: 20px;
-}
-.search{
-  position: relative;
-  left:25px;
-  top: 20px;
-}
-.content{
-  position: relative;
-  top: 20px;
-}
-.mat-form-field {
-  width: 90%;
-  
-}
+
+
 .about{
   margin-top: 50px;
   margin-left: 50px;
   
 }
 
-.search-flight{
-  width: 81%;
-  height: 40%;
-  left: 150px;
-  top: 150px;
-  border-top-left-radius:20px;
-  border-bottom-right-radius:20px
-}
-
-.dropdown-search{
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
 .home{
  
   height: 100%;
 }
 
 
-button {
-  font-family: inherit;
-  font-size: 18px;
-  background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
-  color: white;
-  padding: 0.8em 1.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
+// This is search card CSS 
+
+
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
 }
 
-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-button:active {
-  transform: scale(0.95);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-button span {
-  display: block;
-  margin-left: 0.4em;
-  transition: all 0.3s;
-}
-
-button svg {
-  width: 18px;
-  height: 18px;
-  fill: white;
-  transition: all 0.3s;
-}
-
-.button .svg-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  margin-right: 0.5em;
-  transition: all 0.3s;
-}
-
-.button:hover .svg-wrapper {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-button:hover svg {
-  transform: rotate(45deg);
-}
-
-.qoutes{
-  width: 61%;
-  height: 55%;
+.search-card{
   position: relative;
-  left: 39%;
-  bottom: 48%;
+  left: 82px;
+  width: 90%;
+  top: 213px;
+  
+}
 
+.search-box{
+   display: flex;
+    gap: 10px;
+    position: relative;
+    left: 31px;
+    top: 7px;
+}
+
+.radio-button{
+  position: relative;
+  left: 24px;
+}
+
+.slogan{
 
   h1{
     opacity: 5;
@@ -184,8 +104,4 @@ button:hover svg {
   
   }
 
- 
 }
-
-
-

@@ -1,40 +1,69 @@
 <div class="home">
-
 <div class="main">
-   
-    <mat-card class="example-card">
-        <mat-card-title class="mat-card-title " style="font-family: sans-serif;font-size: 26px;">Search Flight Here</mat-card-title>
-        <mat-card-content class="content">
-            <mat-form-field class="mat-form-field" appearance="outline">
-                <mat-label class="selective" style="width: 80px;">Select from city</mat-label>
-                <mat-select>
-                    <mat-option>None</mat-option>
-                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-form-field class="mat-form-field" appearance="outline">
-                <mat-label>Select To city</mat-label>
-                <mat-select>
-                    <mat-option>None</mat-option>
-                    <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
-                </mat-select>
-            </mat-form-field>
-            <mat-form-field class="mat-form-field" appearance="outline">
-                <mat-label>Choose a date</mat-label>
-                <input matInput [matDatepicker]="picker" [min]="minDate">
-                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-            </mat-form-field>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-flat-button class="search" color="warn">reset</button>
-            <button mat-flat-button class="Research" color="primary">Search<mat-icon matSuffix> flight</mat-icon></button>
-        </mat-card-actions>
-    </mat-card>
-    <div class="qoutes">
-        <h1 style="font-size: 60px;font-weight: bold;color: white;">Fly anywhere, Fly everywhere</h1>
+    <div class="slogan">
+        <h1 style="color: white;position: relative;font-family: sans-serif;font-size: 60px;font-weight: 300;top: 166px;margin-left: 386px"> Fly anywhere, Fly everywhere</h1>
     </div>
 
+    <mat-card class="search-card">
+        <form>
+           <div class="radio-button">
+            <mat-radio-group aria-label="Select an option">
+                <mat-radio-button value="1">One Way</mat-radio-button>
+                <mat-radio-button value="2">Round Trip</mat-radio-button>
+              </mat-radio-group>
+           </div>
+           <div class="search-box">
+            <div> 
+                <mat-form-field class="example-full-width" class="input-1">
+                    <mat-label>Favorite food</mat-label>
+                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                  </mat-form-field>
+            </div>
+            <div style="position: relative;margin-top:17px;">
+                <mat-icon>swap_horiz</mat-icon>
+              </div>
+            <div> 
+                <mat-form-field class="example-full-width" class="input-1">
+                    <mat-label>Favorite food</mat-label>
+                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                  </mat-form-field>
+            </div>
+            
+            <div> 
+                <mat-form-field appearance="outline" class="input-2">
+                    <mat-label>Choose a date</mat-label>
+                    <input matInput [matDatepicker]="picker" [min]="minDate">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+            </div>
+            <div>
+                <mat-form-field appearance="outline" class="input-2">
+                    <mat-label>Number of passengers</mat-label>
+                    <mat-select [(value)]="selected">
+                      <mat-option value="option1">1</mat-option>
+                      <mat-option value="option2">2</mat-option>
+                      <mat-option value="option3">3</mat-option>
+                      <mat-option value="option4">4</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div>
+            <mat-form-field appearance="outline">
+                    <mat-label>CABIN CLASS</mat-label>
+                    <mat-select [(value)]="selected">
+                      <mat-option value="option1">Economy</mat-option>
+                      <mat-option value="option2">Business</mat-option>
+                      <mat-option value="option3">Premium Economy</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
+            <div>
+                <button mat-flat-button  style="background-color: rgb(64, 128, 206);color: white;height: 52px;width: 146px;"> <mat-icon>search</mat-icon>SEARCH</button>
+            </div>
+           </div>
+        </form>
+    </mat-card>
 </div>
 <div class="Top-route-Destination">
     <h1 class="h3">Top Routes and Destination - Airlines Reservation System</h1>
