@@ -10,7 +10,7 @@
 }  
 
 .main{
- background-image: url("../../assets/panorama-2117310_1280.jpg");
+ background-image: url("../../assets/API_header.jpg");
  height: 60%;
  width: 100%;
  background-size: cover;
@@ -30,7 +30,18 @@
   width: 321px;
   height: 250px;
   border-radius: 10px;
+  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+}
 
+.example-card-2.hovered {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  transition: box-shadow 0.3s, transform 0.3s;
+  background-color:#cf6464
+}
+
+.example-card-2.hovered mat-card-title {
+  color: white; 
 }
 
 .mat-card{
@@ -43,8 +54,6 @@
   
  
 }
-
-
 
 .about{
   margin-top: 50px;
@@ -59,8 +68,6 @@
 
 
 // This is search card CSS 
-
-
 .mat-mdc-radio-button ~ .mat-mdc-radio-button {
   margin-left: 16px;
 }

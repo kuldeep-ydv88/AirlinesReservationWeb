@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
+import { Options } from '../shared/shared';
 
 @Component({
   selector: 'app-home',
@@ -9,39 +10,37 @@ import { Observable, map, startWith } from 'rxjs';
 })
 export class HomeComponent  implements OnInit{
   minDate = new Date();
-  passengers:any[]=[2,3,4,5]
-  myControl: any;
+  isHovered: boolean[] = [false, false, false, false];
   selected='';
+  classEco= '';
+  myControl = new FormControl('');
+  options: string[] = Options
+  filteredOptions: Observable<string[]> | undefined;
 
-  
-  constructor(){
 
-  }
+  constructor( ){}
 
   ngOnInit(){
-    
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
   }
   
-  
 
-  states: string[] = [
-    'Delhi',
-    'Mumbai',
-    'Banglore',
-    'Patna',
-    'Calcutta',
-    'Chandigarh',
-    'Sagour',
-    'Dubai',
-    'Florida',
-    'Georgia',
-    'Banaras',
-    'Jammu Kashmir',
-    'London',
-    'Singapore',
-   
-    
-  ];
+
+  onMouseEnter(index: number) {
+    this.isHovered[index] = true;
+  }
+
+  onMouseLeave(index: number){
+    this.isHovered[index] = false;
+  }
 
 
 
