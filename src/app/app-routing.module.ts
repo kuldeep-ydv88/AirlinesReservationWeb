@@ -7,9 +7,10 @@ import { AboutComponent } from './about/about.component';
 import { CustomerLoginComponent } from './customer-login/customer-login.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { MyBookingComponent } from './my-booking/my-booking.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -19,14 +20,10 @@ const routes: Routes = [
   {path:'cutomer-login',component:CustomerLoginComponent},
   {path:'feedback',component:FeedbackComponent},
   {path:'contact-us',component:ContactUsPageComponent},
-  {path:'admin-dashboard',component:AdminDashboardComponent},
   {path:'user/profile',component:ProfileComponent},
   {path:'my-booking',component:MyBookingComponent},
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./dashboard/dashboard-main/dashboard-main.component')
-      .then(m => m.DashboardMainComponent)
-  }
+  {path: 'change-password',component:ChangePasswordComponent},
+  {path:'toolbar',component:ToolbarComponent},
 
 
 
