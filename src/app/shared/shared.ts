@@ -31,7 +31,9 @@ export const Options = [
     'Visakhapatnam (VTZ)',
     'Shirdi (SAG)',
     'Kolkata (CCU)',
-    'Surat (STV)'
+    'Surat (STV)',
+    'Raipur (RPR)',
+    'Bagdogra (IXB)'
 
 
 ]

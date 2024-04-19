@@ -5,7 +5,7 @@ import { ChangePasswordComponent } from '../change-password/change-password.comp
 
 const routes: Routes = [
   {path:'main',component:DashboardMainComponent},
-  {path:'change/password',component:ChangePasswordComponent}
+  {path:'change-password',component:ChangePasswordComponent}
 ];
 
 @NgModule({
