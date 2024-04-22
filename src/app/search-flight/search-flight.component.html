@@ -19,8 +19,8 @@
                      [formControl]="myControl"
                      [matAutocomplete]="auto">
               <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                  {{option}}
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                  {{option.view_value}}
                 </mat-option>
               </mat-autocomplete>
             </mat-form-field>
@@ -38,8 +38,8 @@
                      [formControl]="myControl"
                      [matAutocomplete]="auto">
               <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
-                <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                  {{option}}
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                  {{option.view_value}}
                 </mat-option>
               </mat-autocomplete>
             </mat-form-field>

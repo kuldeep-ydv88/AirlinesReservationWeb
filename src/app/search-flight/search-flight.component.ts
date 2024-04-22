@@ -13,8 +13,8 @@ export class SearchFlightComponent implements OnInit{
   selectedNum = '';
   selectClass = '';
   myControl = new FormControl('');
-  options: string[] = Options;
-  filteredOptions!: Observable<string[]>;
+  options: any = Options;
+  filteredOptions!: Observable<any[]>;
   
   
 
@@ -28,16 +28,13 @@ export class SearchFlightComponent implements OnInit{
       startWith(''),
       map(value => this._filter(value || '')),
     );
-
-
-
   }
   
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
 
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+    return this.options.filter((option: { view_value: string; }) => option.view_value.toLowerCase().includes(filterValue));
   }
 
 }

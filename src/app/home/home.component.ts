@@ -14,8 +14,8 @@ export class HomeComponent  implements OnInit{
   selected='';
   classEco= '';
   myControl = new FormControl('');
-  options: string[] = Options
-  filteredOptions: Observable<string[]> | undefined;
+  options:any = Options
+  filteredOptions!: Observable<any[]>
 
 
   constructor( ){}
@@ -29,7 +29,8 @@ export class HomeComponent  implements OnInit{
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+
+    return this.options.filter((option: { view_value: string; }) => option.view_value.toLowerCase().includes(filterValue));
   }
   
 
