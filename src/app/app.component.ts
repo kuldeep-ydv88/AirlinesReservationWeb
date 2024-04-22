@@ -7,9 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AirlinesReservation';
   showNavbar = true;
   showToolbar = true;
-  constructor(public router:Router){}
+  loggedIn = false;
+  userType: string = '';
+
+
+  constructor(public router:Router){
+
+  }
+
+
+  ngOnInit(){
+
+  }
 
 }

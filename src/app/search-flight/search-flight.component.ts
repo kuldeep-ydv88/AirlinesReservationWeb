@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { Observable, map, startWith } from 'rxjs';
+import { Options } from '../shared/shared';
 
 @Component({
   selector: 'app-search-flight',
@@ -7,8 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchFlightComponent implements OnInit{  
   minDate = new Date();
-  selected = 'option1';
-
+  selectedNum = '';
+  selectClass = '';
+  myControl = new FormControl('');
+  options: any = Options;
+  filteredOptions!: Observable<any[]>;
+  
   
 
   constructor(){
@@ -17,7 +24,17 @@ export class SearchFlightComponent implements OnInit{
 
 
   ngOnInit(){
-    
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
+  }
+  
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter((option: { view_value: string; }) => option.view_value.toLowerCase().includes(filterValue));
   }
 
 }

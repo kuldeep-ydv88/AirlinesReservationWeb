@@ -22,7 +22,6 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-import { AdminDashboardComponent } from './dashboard/admin-dashboard/admin-dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
@@ -30,7 +29,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyBookingComponent } from './my-booking/my-booking.component';
-import { DashboardMainComponent } from './dashboard/dashboard-main/dashboard-main.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
 
@@ -45,11 +44,10 @@ import { DashboardMainComponent } from './dashboard/dashboard-main/dashboard-mai
     FeedbackComponent,
     NavbarComponent,
     ContactUsPageComponent,
-    AdminDashboardComponent,
     ProfileComponent,
     ToolbarComponent,
     MyBookingComponent,
-    DashboardMainComponent,
+    ChangePasswordComponent
     
     
   ],

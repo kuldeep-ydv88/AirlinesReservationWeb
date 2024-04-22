@@ -10,18 +10,38 @@
         </div>
         <div class="search-box">
           <div>
-            <mat-form-field class="example-full-width" class="input-1">
-              <mat-label>Favorite food</mat-label>
-              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            <mat-form-field class="input-1" appearance="outline">
+              <mat-label>From</mat-label>
+              <input type="text"
+                     placeholder="City"
+                     aria-label="Number"
+                     matInput
+                     [formControl]="myControl"
+                     [matAutocomplete]="auto">
+              <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                  {{option.view_value}}
+                </mat-option>
+              </mat-autocomplete>
             </mat-form-field>
           </div>
           <div style="position: relative;margin-top:17px;">
             <mat-icon>swap_horiz</mat-icon>
           </div>
           <div>
-            <mat-form-field class="example-full-width" class="input-1">
-              <mat-label>Favorite food</mat-label>
-              <input matInput placeholder="Ex. Pizza" value="Sushi">
+            <mat-form-field class="input-1" appearance="outline">
+              <mat-label>To</mat-label>
+              <input type="text"
+                     placeholder="Destination"
+                     aria-label="Number"
+                     matInput
+                     [formControl]="myControl"
+                     [matAutocomplete]="auto">
+              <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                  {{option.view_value}}
+                </mat-option>
+              </mat-autocomplete>
             </mat-form-field>
           </div>
           <div>
@@ -35,7 +55,7 @@
           <div>
             <mat-form-field appearance="outline" class="input-2">
               <mat-label>Number of passengers</mat-label>
-              <mat-select [(value)]="selected">
+              <mat-select [(value)]="selectedNum">
                 <mat-option value="option1">1</mat-option>
                 <mat-option value="option2">2</mat-option>
                 <mat-option value="option3">3</mat-option>
@@ -46,7 +66,7 @@
           <div>
             <mat-form-field appearance="outline">
               <mat-label>CABIN CLASS</mat-label>
-              <mat-select [(value)]="selected">
+              <mat-select [(value)]="selectClass">
                 <mat-option value="option1">Economy</mat-option>
                 <mat-option value="option2">Business</mat-option>
                 <mat-option value="option3">Premium Economy</mat-option>

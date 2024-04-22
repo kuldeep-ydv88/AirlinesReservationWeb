@@ -10,22 +10,42 @@
             <mat-radio-group aria-label="Select an option">
                 <mat-radio-button value="1">One Way</mat-radio-button>
                 <mat-radio-button value="2">Round Trip</mat-radio-button>
-              </mat-radio-group>
+            </mat-radio-group>
            </div>
            <div class="search-box">
             <div> 
-                <mat-form-field class="example-full-width" class="input-1">
-                    <mat-label>Favorite food</mat-label>
-                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                <mat-form-field class="input-1" appearance="outline">
+                    <mat-label>From</mat-label>
+                    <input type="text"
+                           placeholder="City"
+                           aria-label="Number"
+                           matInput
+                           [formControl]="myControl"
+                           [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                        {{option.view_value}}
+                      </mat-option>
+                    </mat-autocomplete>
                   </mat-form-field>
             </div>
             <div style="position: relative;margin-top:17px;">
                 <mat-icon>swap_horiz</mat-icon>
               </div>
             <div> 
-                <mat-form-field class="example-full-width" class="input-1">
-                    <mat-label>Favorite food</mat-label>
-                    <input matInput placeholder="Ex. Pizza" value="Sushi">
+                <mat-form-field class="input-1" appearance="outline">
+                    <mat-label>To</mat-label>
+                    <input type="text"
+                           placeholder="Destination"
+                           aria-label="Number"
+                           matInput
+                           [formControl]="myControl"
+                           [matAutocomplete]="auto">
+                    <mat-autocomplete #auto="matAutocomplete">
+                      <mat-option *ngFor="let option of filteredOptions | async" [value]="option.value">
+                        {{option.view_value}}
+                      </mat-option>
+                    </mat-autocomplete>
                   </mat-form-field>
             </div>
             
@@ -51,7 +71,7 @@
             <div>
             <mat-form-field appearance="outline">
                     <mat-label>CABIN CLASS</mat-label>
-                    <mat-select [(value)]="selected">
+                    <mat-select [(value)]="classEco">
                       <mat-option value="option1">Economy</mat-option>
                       <mat-option value="option2">Business</mat-option>
                       <mat-option value="option3">Premium Economy</mat-option>
@@ -69,25 +89,26 @@
     <h1 class="h3">Top Routes and Destination - Airlines Reservation System</h1>
 </div>
 <div class="mat-card">
-    <mat-card class="example-card-2">
+    <mat-card class="example-card-2" (mouseenter)="onMouseEnter(0)" (mouseleave)="onMouseLeave(0)" [ngClass]="{'hovered': isHovered[0]}">
         <img src="../../assets/artur-voznenko-GML74pAOOW8-unsplash.jpg" alt="" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
         <mat-card-title>Air India</mat-card-title>
     </mat-card>
-    <mat-card class="example-card-2">
+    
+    <mat-card class="example-card-2"  (mouseenter)="onMouseEnter(1)" (mouseleave)="onMouseLeave(1)" [ngClass]="{'hovered': isHovered[1]}">
         <img src="../../assets/alexander-schimmeck-DSOohFTAfno-unsplash.jpg" alt="" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
         <mat-card-title>Quatar Airways</mat-card-title>
     </mat-card>
-    <mat-card class="example-card-2">
-        <img src="../../assets/Carousel-1.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
+    <mat-card class="example-card-2"  (mouseenter)="onMouseEnter(2)" (mouseleave)="onMouseLeave(2)" [ngClass]="{'hovered': isHovered[2]}">
+        <img src="../../assets/home-page.jpg" alt="" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
         <mat-card-title>Oman Air</mat-card-title>
     </mat-card>
-    <mat-card class="example-card-2">
+    <mat-card class="example-card-2" (mouseenter)="onMouseEnter(3)" (mouseleave)="onMouseLeave(3)" [ngClass]="{'hovered': isHovered[3]}">
         <img src="../../assets/airport-2373727_1280.jpg" alt="" height="200px" style="border-top-left-radius:20px;border-bottom-right-radius:20px">
         <mat-card-content>
         </mat-card-content>
