@@ -2,7 +2,7 @@ export const Options = [
 
     {view_value:'Agartala (IXA)', value:'Agartala (IXA)-Maharaja Bir Bikram Airport'},
     {view_value:'Amritsar (ATQ)', value:'Amritsar (ATQ)-Sri Guru Ram Dass Jee International Airport'},
-    {view_value:'Belagavi (IXG)', value:'Belgaum Airport'},
+    {view_value:'Belagavi (IXG)', value:'Belagavi (IXG)-Belgaum Airport'},
     {view_value:'Chandigarh (IXC)', value:'Chandigarh (IXC)-Chandigarh International Airport'},
     {view_value:'Dehradun (DED)', value:'Dehradun (DED)-Jolly Grant Airport'},
     {view_value:'Hyderabad (HYD)', value:'Hyderabad (HYD)-Rajiv Gandhi International Airport'},

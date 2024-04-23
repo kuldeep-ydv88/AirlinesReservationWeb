@@ -13,14 +13,11 @@ export class SearchFlightComponent implements OnInit{
   selectedNum = '';
   selectClass = '';
   myControl = new FormControl('');
+  toControl = new FormControl('');
   options: any = Options;
   filteredOptions!: Observable<any[]>;
-  
-  
-
-  constructor(){
-
-  }
+ 
+  constructor(){ }
 
 
   ngOnInit(){
@@ -33,8 +30,8 @@ export class SearchFlightComponent implements OnInit{
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
-
-    return this.options.filter((option: { view_value: string; }) => option.view_value.toLowerCase().includes(filterValue));
+    return this.options.filter((option: { view_value: string; }) => 
+      option.view_value.toLowerCase().includes(filterValue));
   }
 
 }
