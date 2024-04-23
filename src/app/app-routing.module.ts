@@ -8,7 +8,6 @@ import { CustomerLoginComponent } from './customer-login/customer-login.componen
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
 import { ProfileComponent } from './profile/profile.component';
-import { MyBookingComponent } from './my-booking/my-booking.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
@@ -21,7 +20,6 @@ const routes: Routes = [
   {path:'feedback',component:FeedbackComponent},
   {path:'contact-us',component:ContactUsPageComponent},
   {path:'user/profile',component:ProfileComponent},
-  {path:'my-booking',component:MyBookingComponent},
   {path: 'change-password',component:ChangePasswordComponent},
   {path:'toolbar',component:ToolbarComponent},
 

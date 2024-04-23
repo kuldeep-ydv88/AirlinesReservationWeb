@@ -28,7 +28,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ProfileComponent } from './profile/profile.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MyBookingComponent } from './my-booking/my-booking.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 
 
@@ -46,7 +45,6 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     ContactUsPageComponent,
     ProfileComponent,
     ToolbarComponent,
-    MyBookingComponent,
     ChangePasswordComponent
     
     

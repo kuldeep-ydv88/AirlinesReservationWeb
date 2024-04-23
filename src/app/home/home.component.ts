@@ -16,6 +16,7 @@ export class HomeComponent  implements OnInit{
   myControl = new FormControl('');
   options:any = Options
   filteredOptions!: Observable<any[]>
+  
 
 
   constructor( ){}
@@ -27,14 +28,12 @@ export class HomeComponent  implements OnInit{
     );
   }
 
-  private _filter(value: string): string[] {
+  private _filter(value: string): any[] {
     const filterValue = value.toLowerCase();
-
     return this.options.filter((option: { view_value: string; }) => option.view_value.toLowerCase().includes(filterValue));
   }
+
   
-
-
   onMouseEnter(index: number) {
     this.isHovered[index] = true;
   }
