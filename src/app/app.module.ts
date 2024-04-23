@@ -25,8 +25,7 @@ import { ContactUsPageComponent } from './contact-us-page/contact-us-page.compon
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
-import { ProfileComponent } from './profile/profile.component';
-import { ToolbarComponent } from './toolbar/toolbar.component';
+import {sideNavComponent } from './sideNav/sideNav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 
@@ -43,8 +42,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
     FeedbackComponent,
     NavbarComponent,
     ContactUsPageComponent,
-    ProfileComponent,
-    ToolbarComponent,
+    sideNavComponent,
     ChangePasswordComponent
     
     
