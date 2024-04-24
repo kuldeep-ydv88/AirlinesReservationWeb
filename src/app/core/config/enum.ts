@@ -1,4 +1,4 @@
 export enum USERROLE {
-  ADMIN = 'ADMIN',
-  CLINICIAN = 'USER',
+    ADMIN = 'ADMIN',
+    USER = 'USER',
 }

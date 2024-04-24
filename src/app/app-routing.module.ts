@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { SearchFlightComponent } from './search-flight/search-flight.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { AboutComponent } from './about/about.component';
-import { CustomerLoginComponent } from './customer-login/customer-login.component';
-import { FeedbackComponent } from './feedback/feedback.component';
-import { ContactUsPageComponent } from './contact-us-page/contact-us-page.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { sideNavComponent } from './sideNav/sideNav.component';
+import { HomeComponent } from './component/home/home.component';
+import { SearchFlightComponent } from './component/search-flight/search-flight.component';
+import { RegistrationComponent } from './component/registration/registration.component';
+import { AboutComponent } from './component/about/about.component';
+import { CustomerLoginComponent } from './component/customer-login/customer-login.component'
+import { FeedbackComponent } from './component/feedback/feedback.component';
+import { ContactUsPageComponent } from './component/contact-us-page/contact-us-page.component';
+import { ChangePasswordComponent } from './component/change-password/change-password.component';
+
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -19,14 +19,17 @@ const routes: Routes = [
   {path:'feedback',component:FeedbackComponent},
   {path:'contact-us',component:ContactUsPageComponent},
   {path: 'change-password',component:ChangePasswordComponent},
-  {path:'toolbar',component:sideNavComponent},
   {
     path: 'dashboard',
-    loadChildren: () => import('../app/dashboard/dashboard.module')
+    loadChildren: () => import('./module/dashboard/dashboard.module')
       .then(m => m.DashboardModule )
-  }
-
-
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./module/payment/payment.module')
+      .then(m => m.PaymentModule )
+  }
+  
 ];
 
 @NgModule({
