@@ -7,7 +7,6 @@ import { AboutComponent } from './component/about/about.component';
 import { CustomerLoginComponent } from './component/customer-login/customer-login.component'
 import { FeedbackComponent } from './component/feedback/feedback.component';
 import { ContactUsPageComponent } from './component/contact-us-page/contact-us-page.component';
-import { ChangePasswordComponent } from './component/change-password/change-password.component';
 
 
 const routes: Routes = [
@@ -18,7 +17,6 @@ const routes: Routes = [
   {path:'cutomer-login',component:CustomerLoginComponent},
   {path:'feedback',component:FeedbackComponent},
   {path:'contact-us',component:ContactUsPageComponent},
-  {path: 'change-password',component:ChangePasswordComponent},
   {
     path: 'dashboard',
     loadChildren: () => import('./module/dashboard/dashboard.module')

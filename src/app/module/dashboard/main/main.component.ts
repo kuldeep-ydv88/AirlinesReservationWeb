@@ -1,36 +1,35 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { Observable, map, startWith } from 'rxjs';
-import { Options } from '../../shared/shared';
+import { Options } from 'src/app/shared/shared';
 
 @Component({
-  selector: 'app-search-flight',
-  templateUrl: './search-flight.component.html',
-  styleUrls: ['./search-flight.component.scss']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss']
 })
-export class SearchFlightComponent implements OnInit{  
+export class MainComponent implements OnInit {
   minDate = new Date();
+  myControl = new FormControl('');
   selectedNum = '';
   selectClass = '';
-  myControl = new FormControl('');
   options: any = Options;
   filteredOptions!: Observable<any[]>;
- 
-  constructor(){ }
 
-
-  ngOnInit(){
+  ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges.pipe(
       startWith(''),
       map(value => this._filter(value || '')),
     );
   }
-  
 
   private _filter(value: string): string[] {
     const filterValue = value.toLowerCase();
     return this.options.filter((option: { view_value: string; }) => 
       option.view_value.toLowerCase().includes(filterValue));
   }
+  
+
+
 
 }
