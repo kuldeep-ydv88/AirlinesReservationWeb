@@ -1,3 +1,6 @@
+<nav class="navbar navbar-dark bg-dark">
+  
+</nav>
 <div class="search-flight">
     <mat-card class="Search-card">
       <form >
@@ -9,8 +12,7 @@
             </mat-radio-group>
           </div>
           <div class="search-box">
-            
-              <mat-form-field class="input-1" appearance="outline">
+             <mat-form-field class="input-1" appearance="outline">
                 <mat-label>From</mat-label>
                 <input type="text"
                        placeholder="City"
@@ -24,11 +26,7 @@
                   </mat-option>
                 </mat-autocomplete>
               </mat-form-field>
-            
-            
-              <mat-icon>swap_horiz</mat-icon>
-            
-            
+              <mat-icon style="position: relative;top: 16px;">swap_horiz</mat-icon>
               <mat-form-field class="input-1" appearance="outline">
                 <mat-label>To</mat-label>
                 <input type="text"
@@ -43,17 +41,12 @@
                   </mat-option>
                 </mat-autocomplete>
               </mat-form-field>
-            
-            
               <mat-form-field appearance="outline" class="input-2">
                 <mat-label>Choose a date</mat-label>
                 <input matInput [matDatepicker]="picker" [min]="minDate">
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
-            
-            
-              <mat-form-field appearance="outline" class="input-2">
+              </mat-form-field> <mat-form-field appearance="outline" class="input-2">
                 <mat-label>Number of passengers</mat-label>
                 <mat-select [(value)]="selectedNum">
                   <mat-option value="option1">1</mat-option>
@@ -61,23 +54,17 @@
                   <mat-option value="option3">3</mat-option>
                   <mat-option value="option4">4</mat-option>
                 </mat-select>
-              </mat-form-field>
-            
-            
-              <mat-form-field appearance="outline">
+              </mat-form-field><mat-form-field appearance="outline">
                 <mat-label>CABIN CLASS</mat-label>
                 <mat-select [(value)]="selectClass">
                   <mat-option value="option1">Economy</mat-option>
                   <mat-option value="option2">Business</mat-option>
                   <mat-option value="option3">Premium Economy</mat-option>
                 </mat-select>
-              </mat-form-field>
-            
-            
-              <button mat-flat-button class="button"> <mat-icon>search</mat-icon>SEARCH</button>
-            
+              </mat-form-field><button mat-flat-button class="button"> <mat-icon>search</mat-icon>SEARCH</button>
           </div>
         </div>
       </form>
     </mat-card>
+
   </div>
