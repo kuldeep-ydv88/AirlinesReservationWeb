@@ -23,11 +23,10 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
-import {sideNavComponent } from './sideNav/sideNav.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ChangePasswordComponent } from './component/change-password/change-password.component';
 import {CustomerLoginComponent } from './component/customer-login/customer-login.component';
-
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 
 @NgModule({
@@ -39,12 +38,9 @@ import {CustomerLoginComponent } from './component/customer-login/customer-login
     RegistrationComponent,
     FeedbackComponent,
     NavbarComponent,
-    sideNavComponent,
-    ChangePasswordComponent,
     CustomerLoginComponent,
+    LoaderComponent,
    
-    
-    
   ],
   imports: [
     BrowserModule,
@@ -65,12 +61,12 @@ import {CustomerLoginComponent } from './component/customer-login/customer-login
     MatListModule,
     MatMenuModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSpinnerModule
     
-    
-  
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

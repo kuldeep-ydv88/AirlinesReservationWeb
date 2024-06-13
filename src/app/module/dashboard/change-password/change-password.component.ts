@@ -6,14 +6,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './change-password.component.html',
   styleUrls: ['./change-password.component.scss']
 })
-export class ChangePasswordComponent  implements OnInit{
-
+export class ChangePasswordComponent implements OnInit {
   changePasswordForm!:FormGroup
 
-  constructor(private _fb:FormBuilder,
-
-  ){}
-
+  constructor(private _fb:FormBuilder){}
 
   ngOnInit() {
     this.changePasswordForm = this._fb.group({
@@ -27,7 +23,6 @@ export class ChangePasswordComponent  implements OnInit{
   Update(){
     
   }
-
-
   
+
 }
